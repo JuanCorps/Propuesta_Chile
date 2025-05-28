@@ -9,7 +9,7 @@ import LlamadoAccion from '../components/LlamadoAccion';
 
 const slides = [
   {
-    video: '/pacific-assets/videobosque.mp4',
+    video: '/pacific-assets/Videobosque.mp4',
     text: 'Cultura que crece con los bosques.\nConfianza, propósito y sostenibilidad.',
     style: {
       backgroundColor: 'rgba(30, 30, 30, 0.8)',
@@ -44,7 +44,11 @@ export default function Pacific() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+      setCurrentSlide((prevSlide) => {
+        const nextSlide = prevSlide === slides.length - 1 ? 0 : prevSlide + 1;
+        console.log('Current Slide:', nextSlide); // Log the current slide index
+        return nextSlide;
+      });
     }, 3000);
 
     return () => clearInterval(interval);
@@ -101,7 +105,7 @@ export default function Pacific() {
             }`}
             style={slide.style}
           >
-            {slide.video ? (
+            {slide.video && (
               <video
                 className="absolute inset-0 w-full h-full object-cover opacity-50"
                 src={slide.video}
@@ -109,11 +113,6 @@ export default function Pacific() {
                 loop
                 muted
               ></video>
-            ) : (
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${slide.image})` }}
-              ></div>
             )}
             <div className="absolute bottom-20 left-10 text-left max-w-xl p-4">
               <h1 className="text-4xl font-extrabold text-white leading-tight">
