@@ -4,3 +4,4 @@ public/pacific-assets/*.mp4 filter=lfs diff=lfs merge=lfs -text
 public/pacific-assets/videoL.mp4 filter=lfs diff=lfs merge=lfs -text
 public/pacific-assets/videoMundo.mp4 filter=lfs diff=lfs merge=lfs -text
 public/pacific-assets/Video3.mp4 filter=lfs diff=lfs merge=lfs -text
+public/pacific-assets/Videobosque.mp4 filter=lfs diff=lfs merge=lfs -text
