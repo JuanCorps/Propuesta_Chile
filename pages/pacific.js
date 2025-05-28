@@ -9,7 +9,7 @@ import LlamadoAccion from '../components/LlamadoAccion';
 
 const slides = [
   {
-    video: '/pacific-assets/videoL.mp4',
+    video: '/pacific-assets/videobosque.mp4',
     text: 'Cultura que crece con los bosques.\nConfianza, propósito y sostenibilidad.',
     style: {
       backgroundColor: 'rgba(30, 30, 30, 0.8)',
@@ -17,7 +17,7 @@ const slides = [
     },
   },
   {
-    video: '/pacific-assets/video3.mp4',
+    video: '/pacific-assets/Video3.mp4',
     text: 'Personas que construyen futuro,\ncon propósito y raíz.',
     noButton: true,
     style: {
