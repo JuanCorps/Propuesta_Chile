@@ -1,0 +1,10 @@
+{
+  "headers": [
+    {
+      "source": "/pacific-assets/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "video/mp4" }
+      ]
+    }
+  ]
+}
